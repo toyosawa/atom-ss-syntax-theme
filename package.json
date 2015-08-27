@@ -3,7 +3,7 @@
   "theme": "syntax",
   "version": "0.0.0",
   "description": "A short description of your syntax theme",
-  "repository": "https://github.com/atom/ss-syntax-theme",
+  "repository": "https://github.com/toyosawa/atom-ss-syntax-theme",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
