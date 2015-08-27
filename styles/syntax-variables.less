@@ -1,0 +1,64 @@
+// This defines all syntax variables that syntax themes must implement when they
+// include a syntax-variables.less file.
+
+//-------------------------------------
+// Org colors
+//
+@undef: rgba(255, 0, 0, 1);
+
+@syntax-org-kw1: rgba(15, 207, 255, 1);
+@syntax-org-kw2: rgba(255, 179, 0, 1);
+
+@syntax-org-op: rgba(255, 255, 255, 1);
+@syntax-org-comment: rgba(48, 186, 92, 1);
+@syntax-org-string: rgba(200, 130, 230, 1);
+@syntax-org-num: rgba(200, 130, 230, 1);
+@syntax-org-ident: rgba(172, 187, 200, 1);
+
+// Pre Defined
+@syntax-org-const: @syntax-org-kw1;
+@syntax-org-function: @syntax-org-kw1;
+@syntax-org-class: @syntax-org-kw2;
+
+// Config file ... tag=attr
+@syntax-org-src-tag: #96CBFE;
+@syntax-org-src-attr: #C6C5FE;
+
+@syntax-org-support: @undef;
+@syntax-org-css-property: @syntax-org-src-tag;
+
+@syntax-org-entity-attr: @undef;
+@syntax-org-entity-ns: @undef;
+
+@syntax-org-html-punc: rgba(79, 247, 234, 1);
+@syntax-org-html-elem: @syntax-org-kw1;
+@syntax-org-html-attr: @syntax-org-kw2;
+@syntax-org-html-ns: @syntax-org-kw2;
+
+// General colors
+@syntax-text-color: #fff8f8;//#c5c8c6;
+@syntax-cursor-color: #fff;
+@syntax-selection-color: rgba(50, 48, 92, 1);//#444;
+@syntax-selection-flash-color: #eee;
+@syntax-background-color: #000;//#1d1f21;
+
+// Guide colors
+@syntax-wrap-guide-color: rgba(197, 200, 198, .1);
+@syntax-indent-guide-color: rgba(197, 200, 198, .2);
+@syntax-invisible-character-color: rgba(197, 200, 198, .2);
+
+// For find and replace markers
+@syntax-result-marker-color: #888;
+@syntax-result-marker-color-selected: white;
+
+// Gutter colors
+@syntax-gutter-text-color: @syntax-text-color;
+@syntax-gutter-text-color-selected: @syntax-gutter-text-color;
+@syntax-gutter-background-color: lighten(@syntax-background-color, 5%);
+@syntax-gutter-background-color-selected: rgba(255, 255, 255, 0.14);
+
+// For git diff info. i.e. in the gutter
+@syntax-color-renamed: #96CBFE;
+@syntax-color-added: #A8FF60;
+@syntax-color-modified: #E9C062;
+@syntax-color-removed: #CC6666;
